@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.diezgames.battery"
+    android:versionCode="7"
+    android:versionName="1.4.2" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+    <application  android:allowBackup="true"  android:icon="@drawable/ic_launcher"  android:label="@string/app_name" android:theme="@style/AppBaseTheme" >
+        
+        <receiver android:name=".RebootReceiver"  android:enabled="true" android:exported="false">  
+    		<intent-filter>  
+        		<action android:name="android.intent.action.BOOT_COMPLETED" />  
+        			<category android:name="android.intent.category.DEFAULT" /> 
+    					</intent-filter>    				  
+							</receiver>		
+							
+	        <receiver android:name=".BatteryWidgetProvider" android:icon="@drawable/ocra_99" android:label="Battery Indicator Free Widget 1x1">
+	     		<intent-filter>
+	      			<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+	     				</intent-filter>
+	     					<meta-data android:name="android.appwidget.provider"
+	     						 android:resource="@xml/battery_widget_info" />
+    								</receiver>  
+    								      
+	        <service android:name=".BatteryWidgetService" android:label="ButteryIndicatorWidget" android:exported="false">
+	     		<intent-filter>
+	     			 <action android:name="android.intent.action.BATTERY_CHANGED" />
+	     				</intent-filter>    	
+    						</service> 
+    						   	
+	        <service android:name=".BatteryService" 
+	            android:label="ButteryIndicatorNotif" 
+	            android:exported="false">
+	     		<intent-filter>
+	     			 <action android:name="android.intent.action.BATTERY_CHANGED" />
+	     				</intent-filter>
+    						</service> 
+        
+        <activity
+            android:name="com.diezgames.battery.MainActivity" android:theme="@style/AppBaseTheme" android:label="@string/app_name" >
+	            <intent-filter>
+	                <action android:name="android.intent.action.MAIN" />
+	                	<category android:name="android.intent.category.LAUNCHER" />
+	            			</intent-filter>
+	            				<intent-filter>
+	     			 				<action android:name="android.intent.action.BATTERY_CHANGED" />
+	     								</intent-filter>
+	        								</activity>
+        
+        <activity android:name="com.diezgames.battery.LowBatteryValuesSettingsActivity"  android:theme="@style/AppBaseTheme"  android:label="@string/app_name" ></activity>        
+        <activity android:name="com.diezgames.battery.LowBattery20Activity"  android:theme="@style/AppBaseTheme"  android:label="@string/app_name"></activity>        
+        <activity android:name="com.diezgames.battery.LowBattery10Activity"  android:theme="@style/AppBaseTheme"  android:label="@string/app_name"></activity>
+        <activity android:name="com.diezgames.battery.SettingsActivity" android:theme="@style/AppBaseTheme"></activity>
+    
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+</manifest>

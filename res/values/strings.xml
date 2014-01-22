@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Battery Indicator Free</string>
+    <string name="ref_OK">OK</string>
+    <string name="ref_dismiss">Dismiss</string>
+    <string name="action_settings">Settings</string>
+    <string name="battery_level">Charge level: </string>
+    <string name="battery_status">Status: </string>
+    <string name="battery_service_state">The service is now </string>
+    <string name="start_service">Start service</string>
+    <string name="stop_service">Stop service</string>
+    <string name="service_stoped">stoped</string>
+    <string name="service_running">running</string>
+    <string name="battery_charging">Charging</string>
+    <string name="battery_no_charging">Not charging</string>
+    <string name="battery_full_charging">Full charge</string>
+    <string name="ref_service_sw_sum">Start or stop battery notification service</string>
+    <string name="ref_service_sw_title">Battery notification service</string>
+    <string name="ref_service_autoRunService_sum">Start the service immediately after device turning on</string>
+    <string name="ref_service_autoRunService_title">Start automatically</string>
+    <string name="ref_icons_list_sum">Click for change battery indicator numbers theme</string>
+    <string name="ref_icons_list_title">Choose indicator theme</string>
+    <string name="ref_rate_us_sum">Rate us if you like this app, please!</string>
+    <string name="ref_rate_us_title">Rate this app in GooglePlay</string>
+    <string name="ref_low_level_20_notify_title">Low Battery!</string>
+    <string name="ref_low_level_20_notify_sum"> of battery remaining.</string>
+    <string name="ref_low_level_10_notify_title">Very Low Battery!</string>
+    <string name="ref_low_level_10_notify_sum"> of battery remaining. Please, connect the charger!</string>
+    <string name="ref_low_level_notify_title">Notify if battery level is low</string>
+    <string name="ref_low_level_notify_sum">Default notification values is 20 and 10 %. If you want to change it, click the option below. </string>
+    <string name="ref_low_level_settings_sum">Click to change values of low batery level notification.</string>
+	<string name="ref_low_level_settings_title">Low battery level notification settings</string>
+    <string name="ref_low_level_settings_first">FIRST NOTIFICATION</string>
+    <string name="ref_low_level_settings_second">SECOND NOTIFICATION</string>
+</resources>

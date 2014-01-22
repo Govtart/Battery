@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Индикатор Батареи Free</string>
+    <string name="action_settings">Настройки</string>
+    <string name="battery_level">Уровень заряда: </string>
+    <string name="ref_OK">OK</string>
+    <string name="ref_dismiss">Закрыть</string>
+    <string name="battery_status">Состояние: </string>
+    <string name="battery_service_state">Служба сейчас </string>
+    <string name="start_service">Запустить службу</string>
+    <string name="stop_service">Остановить службу</string>
+    <string name="service_stoped">остановлена</string>
+    <string name="service_running">запущена</string>
+    <string name="battery_charging">Заряжается</string>
+    <string name="battery_no_charging">Не заряжается</string>
+    <string name="battery_full_charging">Полная</string>
+    <string name="ref_service_sw_sum">Запустить или остановить службу индикации заряда батареи</string>
+    <string name="ref_service_sw_title">Служба индикации заряда</string>
+    <string name="ref_service_autoRunService_sum">Запустить службу после включения устройства</string>
+    <string name="ref_service_autoRunService_title">Запускать автоматически</string>
+    <string name="ref_icons_list_sum">Нажмите, что бы изменить тему иконок индикатора заряда батареи.</string>
+    <string name="ref_icons_list_title">Тема иконок индикатора</string>
+    <string name="ref_rate_us_sum">Пожалуйста, если Вам понравилось это приложение, поставте ему 5 звезд!</string>
+    <string name="ref_rate_us_title">Поставить оценку на GooglePlay</string>
+    <string name="ref_low_level_20_notify_title">Низкий заряд батареи!</string>
+    <string name="ref_low_level_20_notify_sum"> от общего заряда.</string>
+    <string name="ref_low_level_10_notify_title">Батарея почти разряжена!</string>
+    <string name="ref_low_level_10_notify_sum"> от общего заряда. Подсоедините зарядное устройство!</string>
+    <string name="ref_low_level_notify_title">Уведомлять о разряженной батареи</string>
+    <string name="ref_low_level_notify_sum">Стандартные значения уведомлений - 20 и 10%. Для установки своих значений, нажмите на пункт ниже.</string>
+    <string name="ref_low_level_settings_sum">Нажмите для изменения значений срабатывания уведомлений о низком заряде батареи.</string>
+	<string name="ref_low_level_settings_title">Настройки уведомления о низком заряде батареи</string>
+	<string name="ref_low_level_settings_first">ПЕРВОЕ УВЕДОМЛЕНИЕ</string>
+    <string name="ref_low_level_settings_second">ВТОРОЕ УВЕДОМЛЕНИЕ</string>
+</resources>

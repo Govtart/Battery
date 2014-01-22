@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+ xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+<CheckBoxPreference
+ android:key="autoRunService"
+ android:summary="@string/ref_service_autoRunService_sum"
+ android:title="@string/ref_service_autoRunService_title">
+</CheckBoxPreference>
+
+<CheckBoxPreference
+ android:key="notifyLowBattery"
+ android:summary="@string/ref_low_level_notify_sum"
+ android:title="@string/ref_low_level_notify_title">
+</CheckBoxPreference>
+
+<Preference
+ android:key="LowBatterySettings"
+ android:summary="@string/ref_low_level_settings_sum"
+ android:dependency="notifyLowBattery"
+ android:title="@string/ref_low_level_settings_title">
+
+</Preference>
+
+<Preference
+ android:key="theme"
+ android:summary="@string/ref_icons_list_sum"
+ android:title="@string/ref_icons_list_title">
+</Preference>
+
+<Preference
+ android:key="rateUs"
+ android:summary="@string/ref_rate_us_sum"
+ android:title="@string/ref_rate_us_title"
+ android:enabled="true">    
+</Preference>
+
+<Preference
+ android:summary="v.1.3.2 BY DIEZGAMES"
+ android:title="Battery Indicator Free"
+ android:selectable="false"
+ android:enabled="true">    
+</Preference>
+
+</PreferenceScreen>
